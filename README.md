@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD-3-Clause
 
-Summary: Access to 3DEP database for getting DEM data within the US
+Summary: Access to 3DEP database for getting data such as DEM data within the US.
 
 Py3DEP is a part Hydrodata software stack that handles accessing to the
 National Map's 3D Eelevation Program for getting data such as DEM, slope,
