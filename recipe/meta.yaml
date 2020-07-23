@@ -1,12 +1,12 @@
 {% set name = "py3dep" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7de675f04c0adcfd7c003924d83dcacbf97b181ca7948796cda1c19c1ff77a47
 
 build:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Access to 3DEP database for getting DEM data within the US
+  summary: Access to 3DEP database for getting data such as DEM data within the US.
 
   description: |
     Py3DEP is a part Hydrodata software stack that handles accessing to the

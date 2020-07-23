@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+About conda-forge	README.md	/^About conda-forge$/;"	c
+About py3dep	README.md	/^About py3dep$/;"	c
+CONDARC	.scripts/build_steps.sh	/^cat >~\/.condarc <<CONDARC$/;"	h
+Current build status	README.md	/^Current build status$/;"	c
+Current release info	README.md	/^Current release info$/;"	c
+Feedstock Maintainers	README.md	/^Feedstock Maintainers$/;"	c
+Installing py3dep	README.md	/^Installing py3dep$/;"	c
+Terminology	README.md	/^Terminology$/;"	c
+Updating py3dep-feedstock	README.md	/^Updating py3dep-feedstock$/;"	c
+main	build-locally.py	/^def main(args=None):$/;"	f
+run_docker_build	build-locally.py	/^def run_docker_build(ns):$/;"	f
+setup_environment	build-locally.py	/^def setup_environment(ns):$/;"	f
+verify_config	build-locally.py	/^def verify_config(ns):$/;"	f
