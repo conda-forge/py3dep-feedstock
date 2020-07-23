@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/cheginit/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3fd0644c74d16c875136232897a74d673dba835d866b8b6c9349f2efc7c4eda3
+  sha256: 2348427562818ffce971a979cffb81293d101f5a2b1bf7e0682fb350f6470d85
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,12 +37,12 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Access to 3DEP database for getting DEM data within the US'
+  summary: Access to 3DEP database for getting DEM data within the US
 
   description: |
-      Py3DEP is a part Hydrodata software stack that handles accessing to the
-      National Map's 3D Eelevation Program for getting data such as DEM, slope,
-      and aspect.
+    Py3DEP is a part Hydrodata software stack that handles accessing to the
+    National Map's 3D Eelevation Program for getting data such as DEM, slope,
+    and aspect.
   doc_url: https://hydrodata.readthedocs.io
   dev_url: https://github.com/cheginit/py3dep
 
