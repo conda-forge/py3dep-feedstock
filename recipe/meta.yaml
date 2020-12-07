@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 848186af99e0f50fca3a5622688cc398feef0b6e64c3f373139b7dfba873123b
+  sha256: 8ebfd19bc56a10cc177df85f9475c80c340750196c59c8754163e7d09414e28d
 
 build:
   noarch: python
@@ -23,10 +23,7 @@ requirements:
     - python >=3.6
     - pygeoogc
     - pygeoutils
-    - xarray
     - scipy
-    - rasterio
-    - shapely
     - dataclasses
 
 test:
