@@ -25,6 +25,7 @@ requirements:
     - pygeoutils
     - scipy
     - dataclasses
+    - cytoolz
 
 test:
   imports:
