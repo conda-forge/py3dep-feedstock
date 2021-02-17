@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.2.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ebfd19bc56a10cc177df85f9475c80c340750196c59c8754163e7d09414e28d
+  sha256: 0f044ac107fb63287ae22cec7427d1eaef353ef4dbe0c277ac6a91c4238723d0
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - pygeoutils
     - scipy
     - dataclasses
+    - cytoolz
 
 test:
   imports:
