@@ -1,49 +1,61 @@
 {% set name = "py3dep" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0f044ac107fb63287ae22cec7427d1eaef353ef4dbe0c277ac6a91c4238723d0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
+  sha256: 03434ab61868fa15c3d2ca0ad07c00574325168628b9e825b509843d3b6f4f5b
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools_scm
-  run:
     - python >=3.6
+    - setuptools-scm
+  run:
+    - aiodns
+    - aiohttp
+    - brotlipy
+    - chardet
+    - cytoolz
+    - defusedxml
+    - geopandas
+    - nest-asyncio
+    - netcdf4
+    - orjson
+    - owslib
     - pygeoogc
     - pygeoutils
-    - scipy
-    - dataclasses
-    - cytoolz
+    - pyproj
+    - python >=3.6
+    - rasterio
+    - requests
+    - setuptools
+    - shapely
+    - simplejson
+    - xarray
 
 test:
   imports:
     - py3dep
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/cheginit/py3dep
+  summary: Access USGS 3DEP database and get data such as elevation in the US
   license: MIT
-  license_family: MIT
   license_file: LICENSE
-  summary: Access to 3DEP database for getting data such as DEM data within the US.
-
-  description: |
-    Py3DEP is a part Hydrodata software stack that handles accessing to the
-    National Map's 3D Eelevation Program for getting data such as DEM, slope,
-    and aspect.
-  doc_url: https://hydrodata.readthedocs.io
-  dev_url: https://github.com/cheginit/py3dep
 
 extra:
   recipe-maintainers:
