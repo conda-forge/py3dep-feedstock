@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,39 +8,29 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 518945dbc6605052c8bd3ebd48c3e54a550bff4a4c991a31ab76915dd91afdf4
+  sha256: 526a5899834c9b4618f6b98b2a05dac9f2b4eb3ea21f0f980ffac04f27560f35
 
 build:
   number: 0
   noarch: python
+  entry_points:
+    - py3dep = py3dep.cli:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - aiodns
-    - aiohttp
-    - brotlipy
-    - chardet
+    - click
     - cytoolz
-    - defusedxml
-    - geopandas
-    - nest-asyncio
-    - netcdf4
-    - orjson
-    - owslib
+    - numpy
     - pygeoogc
     - pygeoutils
-    - pyproj
-    - python >=3.6
+    - python >=3.7
     - rasterio
-    - requests
-    - setuptools
     - shapely
-    - simplejson
     - xarray
 
 test:
@@ -48,6 +38,7 @@ test:
     - py3dep
   commands:
     - pip check
+    - py3dep --help
   requires:
     - pip
 
