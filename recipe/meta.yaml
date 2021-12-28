@@ -36,7 +36,7 @@ requirements:
     - scipy
     - shapely >=1.6
     - xarray >=0.18
-    - importlib-metadata  #[py<38]
+    - importlib-metadata  # [py<38]
 
 test:
   imports:
