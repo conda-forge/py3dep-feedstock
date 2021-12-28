@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.11.4" %}
+{% set version = "0.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 37b1793ecac03fd0675ec7f4316b391dd7c9d891f303baee9bd6f6eef4b5470f
+  sha256: 08590af0eb69e4ba9ad3cd9e4bf5da9cccc20953303fa94ef78312cccf0222ce
 
 build:
   number: 0
@@ -23,18 +23,20 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.2
+    - async_retriever >=0.3
     - click
     - cytoolz
     - numpy >=1.17
     - pydantic
-    - pygeoogc >=0.11
-    - pygeoutils >=0.11.5
+    - pygeoogc >=0.12
+    - pygeoutils >=0.12
     - python >=3.7
     - rasterio >=1.2
+    - rioxarray >=0.8
     - scipy
     - shapely >=1.6
-    - xarray >=0.17
+    - xarray >=0.18
+    - importlib_metadata
 
 test:
   imports:
