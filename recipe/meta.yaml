@@ -23,13 +23,13 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.3
+    - async_retriever >=0.3.1
     - click
     - cytoolz
     - numpy >=1.17
     - pydantic
-    - pygeoogc >=0.12
-    - pygeoutils >=0.12
+    - pygeoogc >=0.12.1
+    - pygeoutils >=0.12.1
     - python >=3.7
     - rasterio >=1.2
     - rioxarray >=0.8
