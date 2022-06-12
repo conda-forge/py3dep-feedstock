@@ -27,8 +27,8 @@ requirements:
     - click
     - cytoolz
     - numpy >=1.17
-    - pygeoogc >=0.13
-    - pygeoutils >=0.13
+    - pygeoogc >=0.13.1
+    - pygeoutils >=0.13.1
     - python >=3.7
     - rasterio >=1.2
     - rioxarray >=0.8
