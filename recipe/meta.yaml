@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 4e80ac07758d64c202a4fcbd7c688398edff6e4bf31660b7b7022930fee31d7b
+  sha256: 875b34f524149531d9bbac5a0dd44c8cc7affa3cc0d11e80a70be1d125a8a726
 
 build:
   number: 0
