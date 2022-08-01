@@ -11,7 +11,7 @@ source:
   sha256: 875b34f524149531d9bbac5a0dd44c8cc7affa3cc0d11e80a70be1d125a8a726
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - py3dep = py3dep.cli:cli
@@ -31,10 +31,10 @@ requirements:
     - pygeoutils >=0.13.2
     - python >=3.8
     - rasterio >=1.2
-    - rioxarray >=0.10
+    - rioxarray >=0.11
     - scipy
     - shapely >=1.7
-    - xarray >=0.18
+    - xarray >=2022.03.0
 
 test:
   imports:
