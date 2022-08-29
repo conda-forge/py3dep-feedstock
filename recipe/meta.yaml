@@ -1,6 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.13.3" %}
-
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,33 +7,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 875b34f524149531d9bbac5a0dd44c8cc7affa3cc0d11e80a70be1d125a8a726
+  sha256: 767b16c71d13b70483741f613ee0553c83f638f4d184e398822df811898ef544
 
 build:
-  number: 1
-  noarch: python
   entry_points:
     - py3dep = py3dep.cli:cli
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
     - setuptools-scm
   run:
-    - async_retriever >=0.3.2
-    - click >=7.0
-    - cytoolz
-    - numpy >=1.17
-    - pygeoogc >=0.13.2
-    - pygeoutils >=0.13.2
     - python >=3.8
-    - rasterio >=1.2
-    - rioxarray >=0.11
+    - click >=0.7
+    - numpy >=1.17
+    - pygeoutils >=0.13.5
+    - shapely >=1.8
     - scipy
-    - shapely >=1.7
+    - rasterio >=1.2
     - xarray >=2022.03.0
+    - async_retriever >=0.3.5
+    - rioxarray >=0.11
+    - pygeoogc >=0.13.5
+    - cytoolz
 
 test:
   imports:
@@ -46,10 +45,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/cheginit/py3dep
-  summary: Access USGS 3DEP database and get data such as elevation in the US
+  home: https://github.com/hyriver/py3dep
+  summary: Access topography data at any resolution via 3DEP web service of USGS.
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
