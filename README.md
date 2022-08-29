@@ -1,13 +1,13 @@
 About py3dep
 ============
 
-Home: https://github.com/cheginit/py3dep
+Home: https://github.com/hyriver/py3dep
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py3dep-feedstock/blob/main/LICENSE.txt)
 
-Summary: Access USGS 3DEP database and get data such as elevation in the US
+Summary: Access topography data at any resolution via 3DEP web service of USGS.
 
 Current build status
 ====================
