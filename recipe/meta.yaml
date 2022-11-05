@@ -23,17 +23,17 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
+    - async-retriever >=0.3.6
     - click >=0.7
-    - numpy >=1.17
-    - pygeoutils >=0.13.5
-    - shapely >=1.8
-    - scipy
-    - rasterio >=1.2
-    - xarray >=2022.03.0
-    - async_retriever >=0.3.5
-    - rioxarray >=0.11
-    - pygeoogc >=0.13.5
     - cytoolz
+    - numpy >=1.17
+    - pygeoogc >=0.13.7
+    - pygeoutils >=0.13.7
+    - rasterio >=1.2
+    - rioxarray >=0.11
+    - scipy
+    - shapely >=1.8
+    - xarray >=2022.03.0
 
 test:
   imports:
