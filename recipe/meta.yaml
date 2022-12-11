@@ -14,7 +14,7 @@ build:
     - py3dep = py3dep.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
-    - async-retriever >=0.3.7
+    - async-retriever >=0.3.8
     - click >=0.7
     - cytoolz
     - numpy >=1.17
