@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.13.8" %}
+{% set version = "0.13.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: b3671687c0ce7e4a39e5104920ec3181261a29a2d2322f4987004f9327629ef5
+  sha256: 330062cb2573cf71b94ba7193e419b2fb8565bdf7abc09a681a87c7522ee9650
 
 build:
   entry_points:
     - py3dep = py3dep.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
