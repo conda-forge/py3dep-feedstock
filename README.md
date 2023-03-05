@@ -1,11 +1,11 @@
-About py3dep
-============
+About py3dep-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py3dep-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/py3dep
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py3dep-feedstock/blob/main/LICENSE.txt)
 
 Summary: Access topography data at any resolution via 3DEP web service of USGS.
 
