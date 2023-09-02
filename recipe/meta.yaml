@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 079af5295bb610fcfef0b245f33050dd1ba8788cbdee9ffefec066358421da83
+  sha256: f54a7c0641e0944013905094abb4204b2200e997531a0c49b8d7a74a24d817e1
 
 build:
   entry_points:
     - py3dep = py3dep.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - cytoolz
     - geopandas >=0.10
     - numpy >=1.21
-    - pygeoogc <0.16,>=0.15
+    - pygeoogc <0.16,>=0.15.1
     - pygeoutils <0.16,>=0.15
     - rasterio >=1.2
     - rioxarray >=0.11
