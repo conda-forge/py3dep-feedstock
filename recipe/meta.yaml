@@ -24,18 +24,18 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.16,>=0.15.2
+    - async-retriever <0.17,>=0.16
     - click >=0.7
     - cytoolz
     - geopandas-base >=0.10
     - fiona
     - numpy >=1.21
-    - pygeoogc <0.16,>=0.15.2
-    - pygeoutils <0.16,>=0.15.2
+    - pygeoogc <0.17,>=0.16
+    - pygeoutils <0.17,>=0.16
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
-    - shapely >=1.8.5
+    - shapely >=2
     - xarray >=2023.01
 
 test:
