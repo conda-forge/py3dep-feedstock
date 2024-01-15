@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 1711c907584061fffcc108d37d2a1d277bfcaf64f57e9b58cb25368fb69482d4
+  sha256: 4604f07e9d715e99f8e3a24a84be2d9fc428a1ed6b3ef903ec0bc723c4710eda
 
 build:
   entry_points:
@@ -30,8 +30,8 @@ requirements:
     - geopandas-base >=0.10
     - fiona
     - numpy >=1.21
-    - pygeoogc <0.17,>=0.16
-    - pygeoutils <0.17,>=0.16
+    - pygeoogc <0.17,>=0.16.1
+    - pygeoutils <0.17,>=0.16.1
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
