@@ -19,19 +19,19 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools >=42
-    - setuptools-scm >=7
+    - hatchling >=1.12
+    - hatch-vcs
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.17,>=0.16
+    - async-retriever <0.18,>=0.17
     - click >=0.7
     - cytoolz
     - geopandas-base >=0.10
-    - fiona
+    - pyogrio
     - numpy >=1.21
-    - pygeoogc <0.17,>=0.16
-    - pygeoutils <0.17,>=0.16
+    - pygeoogc <0.18,>=0.17
+    - pygeoutils <0.18,>=0.17
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
