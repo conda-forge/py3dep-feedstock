@@ -1,5 +1,5 @@
 {% set name = "py3dep" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 5bb755e51c98772d7e8e237ed5421d8f31063def9cd138e9c114451515ad9907
+  sha256: a0e284980fa5ade3fa61b0a1ded119d4ef526e2ce492aa5b96c630094db6a35d
 
 build:
   entry_points:
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatchling >=1.12
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - async-retriever <0.18,>=0.17
     - click >=0.7
     - cytoolz
