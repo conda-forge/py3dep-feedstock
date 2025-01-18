@@ -1,20 +1,20 @@
 {% set name = "py3dep" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py3dep-{{ version }}.tar.gz
-  sha256: 594f810db99b3dce428a58ae0af8c39b90ce0ebe0f6d5275663ae28118abdbd8
+  url: https://files.pythonhosted.org/packages/e2/3c/8a91d2f99946ef841227715c7729e32b368e7000141842cade8f7514bc86/py3dep-{{ version }}.tar.gz
+  sha256: 79c8e6995a671d3af2462bcc8c8828f758212251f7226ca386ec08fd6983c9a7
 
 build:
   entry_points:
     - py3dep = py3dep.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -24,14 +24,14 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - async-retriever <0.19,>=0.18
+    - async-retriever >=0.19,<0.20
     - click >=0.7
     - cytoolz
     - geopandas-base >=1
     - pyogrio
     - numpy >=1.21
-    - pygeoogc <0.19,>=0.18
-    - pygeoutils <0.19,>=0.18
+    - pygeoogc >=0.19,<0.20
+    - pygeoutils >=0.19,<0.20
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
