@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@cheginit](https://github.com/cheginit/)
 
-
-<!-- dummy commit to enable rerendering -->
-
